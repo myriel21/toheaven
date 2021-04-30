@@ -16,6 +16,7 @@ state = 0
 
 cds_data = [] # 조도 데이터 리스트
 
+========================Psd ===========================
 
 class ptpsd(Psd):
     @blynk.VIRTUAL_READ(1)
@@ -40,7 +41,7 @@ class ptpsd(Psd):
         print(ret)
         return ret
 
-
+======================== Switch ===========================
 
 class ptswitch(Switches):
     @blynk.VIRTUAL_WRITE(0)
@@ -61,7 +62,7 @@ class ptswitch(Switches):
         elif sta[0] == '2':
             state = 2
         
-################################ 
+========================Cds ===========================
 class ptCds(Cds):
     @blynk.VIRTUAL_READ(3)
     def on_cds():
@@ -206,7 +207,7 @@ class gos(Cds):
 
         return
 
-################################
+====================== 실행문 ===========================
 
 while True:
 
