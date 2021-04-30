@@ -1,3 +1,5 @@
+![20210430_121755](https://user-images.githubusercontent.com/81691479/116648464-0ea98780-a9b8-11eb-98ed-e6743528388e.jpg)
+
 from pop import PixelDisplay, Psd, Switches, Oled, Cds, Leds
 import time, BlynkLib
 
