@@ -1,5 +1,16 @@
 ![20210430_121755](https://user-images.githubusercontent.com/81691479/116648464-0ea98780-a9b8-11eb-98ed-e6743528388e.jpg)
 
+Psd 센서와 Cds 센서를 데이터를 Oled와 Pixel Display로 데이터로 전환하여 시각화하는 알고리즘 구현
+Digital signning 에 적용 가능하다고 생각됨
+
+Psd 거리값에 따라 Oled 애니메이션의 화면밝기를 조절하려 했으나
+Oled의 화면이 작고 색감이 단순하여 Pixel Display로 구현하기로 했음.
+
+Cds 센서로 조도 데이터를 수집하여 조도 수준에 따라서Oled에 레벨을 표시하고 
+Pixel Display에 다른 색깔과 밝기로 차별화하여 시각화를 구현하였음 
+
+=========================================================================================================================
+
 from pop import PixelDisplay, Psd, Switches, Oled, Cds, Leds
 import time, BlynkLib
 
